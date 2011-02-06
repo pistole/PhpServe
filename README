@@ -1,0 +1,23 @@
+This is basically an incomplete work-in-progress.
+
+I hit a wall when I discovered that the PHP CLI SAPI ignores all header calls 
+completely (even internal calls like the cookie functions use).
+
+Large portions are a refactoring of bib_server 
+(http://www.phpclasses.org/package/4084-PHP-Web-server-in-pure-PHP.html), but 
+there are still large amounts of cleanup to be done before I could possibly be
+happy with the code.
+
+Anyway, I hope this might be useful to somebody someday, and who knows, maybe
+my patch to PHP will be approved and I can finish this.
+
+(Yes, I could require php-cgi, but that defeats the purpose, it's not available
+out of the box in a lot of places).
+
+Anyway, bib_server was released without a license, so I feel comfortable in 
+slapping a BSD-style license on the package as a whole.
+
+Many thanks to Anthony Bush for Awb_File, which means portions of this 
+software are copyright 2011 Anthony Bush.
+
+Comments/Questions/Etc: contact me at pistole@rhp.org.
